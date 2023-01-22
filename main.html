@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="logic.js" defer ></script>
+    
+</head>
+<body>
+    <div id="calculator">
+        <h1>Calculator</h1>
+        <div>
+            <input type="number" name="number" id="answer">
+            
+        </div>
+        <div>
+            <input class="front" id="ac" type="button" value="AC" onclick="Myclear()" >
+            <input class="front" id="back" type="button" value="C" onclick="Clear_last()">
+            <input class="middle" id="div" type="button" value="/" onclick="Myoperator('/')">
+        </div>
+        <div>
+            <input class="middle" id="one" type="button" value="1" onclick="Mywrite(1)">
+            <input class="middle" id="two" type="button" value="2" onclick="Mywrite(2)">
+            <input class="middle" id="three" type="button" value="3" onclick="Mywrite(3)">
+            <input class="middle" id="mul" type="button" value="*" onclick="Myoperator('*')">
+        </div>
+        <div>
+            <input class="middle" id="four" type="button" value="4" onclick="Mywrite(4)">
+            <input class="middle" id="five" type="button" value="5" onclick="Mywrite(5)">
+            <input class="middle" id="six" type="button" value="6" onclick="Mywrite(6)">
+            <input class="middle" id="sub" type="button" value="-" onclick="Myoperator('-')">
+        </div>
+        <div>
+            <input class="middle" id="sev" type="button" value="7" onclick="Mywrite(7)">
+            <input class="middle" id="eig" type="button" value="8" onclick="Mywrite(8)">
+            <input class="middle" id="nine" type="button" value="9" onclick="Mywrite(9)">
+            <input class="middle" id="add" type="button" value="+" onclick="Myoperator('+')">
+        </div>
+        <div>
+            <input class="last" id="zero" type="button" value="0" onclick="Mywrite(0)">
+            <input class="last" id="equal" class="middle" type="button" value="=" onclick="Myoutput()">
+        </div>
+        <br>
+        <br>
+    </div>
+</body>
+</html>
